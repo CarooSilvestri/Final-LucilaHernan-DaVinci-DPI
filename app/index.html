@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="jqm/arteBA.css">
+    <script src="jqm/jquery-1.12.3.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>ArteBA</title>
+</head>
+
+<body>
+
+    <div data-role="page" id="home" data-theme="a">
+
+        <div id="menu" data-role="panel" data-display="overlay" data-position-fixed="true">
+
+            <a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" class="ui-btn-right">Cerrar</a>
+            <img src="img/Arteba Logo.png" alt="logo" width="100%">
+            <div data-role="controlgroup">
+                <a href="#conocenos" data-role="button" data-icon="info">Conócenos</a>
+                <a href="#visitas" data-role="button" data-icon="location">Visitas</a>
+            </div>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+
+            <h1>ArteBA</h1>
+            <a href="#menu" data-rel="open" data-icon="bars" data-iconpos="notext">Menú</a>
+            <a href="#emergente" data-rel="popup" data-role="button" data-position-to="window" data-transition="pop"
+                data-icon="info" data-iconpos="notext">Abrir PopUp</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div data-role="popup" id="emergente" data-overlay-theme="b" data-history="false" class="ui-content">
+
+                <a href="#" data-role="button" data-theme="b" data-rel="back" data-icon="delete" data-iconpos="notext"
+                    class="ui-btn-right">cerrar</a>
+                <h2>Hernan Manuel Otero y Lucila Nerina Pohl</h2>
+                <img src="img/Nosotros.jpg" width="100%">
+                <div class="cont-texto">
+                    <h3>Diseño Multimedia</h3>
+                    <p> • Materia: Desarrollo de Aplicaciones Multiplataforma</p>
+                    <p> • Curso: 5ºA Turno Noche</p>
+                    <p> • Año: 2021</p>
+                </div>
+            </div>
+
+            <ul data-role="listview" data-icon="false" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-filter="true" data-filter-placeholder="Buscá tu galería" class="listado-charlas" id="list-galerias">            
+                <!-- Lista galerías -->
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="botones" data-tap-toggle="false">
+
+            <div data-role="navbar" data-iconpos="top">
+
+                <ul>
+                    <li><a href="#" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#artistas" data-icon="user">Artistas</a></li>
+                    <li><a href="#charlas" data-icon="star" id="charlas">Mis charlas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acá van las pages de galerias -->
+
+    <div data-role="page" id="conocenos" data-theme="a">
+
+        <div id="menu2" data-role="panel" data-display="overlay" data-position-fixed="true">
+
+            <a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" class="ui-btn-right">cerrar</a>
+            <img src="img/Arteba Logo.png" alt="logo" width="100%">
+            <div data-role="controlgroup">
+
+                <a href="#" data-role="button" data-icon="info">Conócenos</a>
+                <a href="#visitas" data-role="button" data-icon="user">Visitas</a>
+            </div>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <a href="#menu2" data-rel="open" data-icon="bars" data-iconpos="notext">menú</a>
+            <h1>Conócenos</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="cont-texto">
+                <h2>Sobre la Fundación</h2>
+                <p>Somos una organización no gubernamental sin fines de lucro fundada el 16 de octubre de 1991 que
+                    trabaja en el desarrollo y fortalecimiento del mercado del arte:</p>
+                <br>
+                <p>• Incentivando y promocionando la producción artística contemporánea.</p>
+                <p>• Profesionalizando a los diversos actores del medio.</p>
+                <p>• Tendiendo puentes con la comunidad internacional. </p>
+                <p>• Atrayendo y comprometiendo a un nuevo público en la práctica del coleccionismo.</p>
+                <br>
+                <p>Desde su conformación hace 29 años, organizamos una de las ferias de arte contemporáneo más
+                    importantes de la región promoviendo el arte argentino y latinoamericano, con el objetivo de seguir
+                    posicionándolos en el mercado mundial.</p>
+                <br>
+                <p>Desarrollamos diversas acciones que tienen lugar antes y durante la Feria, que son parte de una
+                    estrategia anual que es posible llevar a cabo por nuestra condición de organización sin fines de
+                    lucro que permite contar con sponsoreos, subsidios, programas especiales y trabajar con la mirada puesta
+                    en el largo plazo.</p>
+                <br>
+                <p>Generamos un centro de negocios, con la plena conciencia de que a partir de la activación de un
+                    sistema de circulación de obras de arte, se fomentan redes de difusión e intercambio artístico en el mapa
+                    internacional. De este modo se posibilita que más personas se acerquen al arte contemporáneo.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="botones" data-tap-toggle="false">
+
+            <div data-role="navbar" data-iconpos="top">
+
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#artistas" data-icon="user">Artistas</a></li>
+                    <li><a href="#charlas" data-icon="star" id="charlas">Mis charlas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="visitas" data-theme="a">
+
+        <div id="menu3" data-role="panel" data-display="overlay" data-position-fixed="true">
+
+            <a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" class="ui-btn-right">cerrar</a>
+            <img src="img/Arteba Logo.png" alt="logo" width="100%">
+            <div data-role="controlgroup">
+
+                <a href="#conocenos" data-role="button" data-icon="info">Conócenos</a>
+                <a href="#" data-role="button" data-icon="user">Visitas</a>
+            </div>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+
+            <a href="#menu3" data-rel="open" data-icon="bars" data-iconpos="notext">menú</a>
+            <h1>Visitas</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+
+            <div class="cont-texto">
+                <h2>Cómo llegar</h2>
+                <h3>Arenas Studios</h3>
+                <p>Av. Don Pedro de Mendoza 965</p>
+            </div>
+
+            <div data-role="collapsible-set" data-iconpos="right" data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+                <div data-role="collapsible" data-collapsed="false" class="colapsable">
+                    <h3>Bus</h3>
+                    <p>Transportes cercanos / Líneas:
+                        <br>
+                        8 - 20 - 25 - 29 - 33 - 46 - 53 - 64 - 86 - 129 - 152 - 159 - 168
+                    </p>
+                </div>
+
+                <div data-role="collapsible" class="colapsable">
+                    <h3>Automovil</h3>
+                    <p>Estacionamiento en Arenas Studios</p>
+                </div>
+
+                <div data-role="collapsible" class="colapsable">
+                    <h3>Subte</h3>
+                    <p>Línea C - Retiro / Constitución</p>
+                </div>
+
+                <div data-role="collapsible" class="colapsable">
+                    <h3>Tren</h3>
+                    <p>Línea: Tren Roca</p>
+                </div>
+
+                <div data-role="collapsible" class="colapsable">
+                    <h3>Aeropuertos</h3>
+                    <div class="data">
+                        <h3>Aeroparque Jorge Newbery</h3>
+                        <ul>
+                            <li><b>Distancia:</b> 17 km.</li>
+                            <li><b>Bus:</b> líneas 33 - 45.</li>
+                            <li><b>Taxi:</b>no más de 30 minutos de viaje.</li>
+                            <li><b>Transportes punto a punto: </b>Tienda León.</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="data ezeiza">
+                        <h3>Aeropuerto Internacional Ministro Pistarini, Ezeiza</h3>
+                        <ul>
+                            <li><b>Distancia:</b> 37 km.</li>
+                            <li><b>Servicios en el aeropuerto:</b> Taxi, remises autorizados.</li>
+                            <li><b>Transportes punto a punto: </b>Tienda León.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div data-role="footer" data-position="fixed" class="botones" data-tap-toggle="false">
+
+            <div data-role="navbar" data-iconpos="top">
+
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#artistas" data-icon="user">Artistas</a></li>
+                    <li><a href="#charlas" data-icon="star" id="charlas">Mis charlas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="charlas" data-theme="a">
+
+        <div id="menu4" data-role="panel" data-display="overlay" data-position-fixed="true">
+
+            <a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" class="ui-btn-right">cerrar</a>
+            <img src="img/Arteba Logo.png" alt="logo" width="100%">
+            <div data-role="controlgroup">
+                <a href="#conocenos" data-role="button" data-icon="info">Conócenos</a>
+                <a href="#" data-role="button" data-icon="user">Visitas</a>  
+            </div>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <a href="#menu4" data-rel="open" data-icon="bars" data-iconpos="notext">menú</a>
+            <h1>Mis charlas</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-icon="false" data-inset="true" data-filter="true" data-filter-placeholder="Buscá tu charla" class="listado-charlas" id="list-charlas">
+                <!-- Acá van las charlas -->
+            </ul>
+            <button id="btn-eliminar-todo">Borrar todo</button>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="botones" data-tap-toggle="false">
+
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#artistas" data-icon="user">Artistas</a></li>
+                    <li><a href="#" data-icon="star" class="ui-btn-active ui-state-persist">Mis charlas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="artistas" data-theme="a">
+
+        <div id="menu5" data-role="panel" data-display="overlay" data-position-fixed="true">
+
+            <a href="#" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext" class="ui-btn-right">cerrar</a>
+
+            <img src="img/Arteba Logo.png" alt="logo" width="100%">
+            <div data-role="controlgroup">
+                <a href="#conocenos" data-role="button" data-icon="info">Conócenos</a>
+                <a href="#" data-role="button" data-icon="user">Visitas</a>
+            </div>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <a href="#menu5" data-rel="open" data-icon="bars" data-iconpos="notext">menú</a>
+            <h1>Artistas</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-icon="false"  class="ui-listview ui-listview-inset ui-corner-all ui-shadow" id="list-artistas" data-inset="true" data-filter="true" data-filter-placeholder="Buscá tu artista">
+            <!-- Acá va el listado de artistas -->
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="botones" data-tap-toggle="false">
+
+            <div data-role="navbar" data-iconpos="top">
+
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#" data-icon="user" class="ui-btn-active ui-state-persist">Artistas</a></li>
+                    <li><a href="#charlas" data-icon="star" id="charlas">Mis charlas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aca van las pages de artistas -->
+
+    <script src="actions.js"></script>
+
+</body>
+
+</html>

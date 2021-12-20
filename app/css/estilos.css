@@ -1,0 +1,74 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.cont-texto {
+
+    padding: 6%;
+}
+
+.cont-texto h2 {
+
+    margin-bottom: 3%;
+}
+
+.datos {
+
+    margin-top: 5%;
+    display: flex;
+}
+
+.dir {
+    
+    width: 60%;
+}
+
+.stand {
+
+    margin-left: 5%;
+}
+
+.botones{
+
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.colapsable p {
+
+    padding: 5%;
+}
+
+.data {
+
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+hr {
+
+    margin-top: 5%;
+}
+
+.data ul {
+
+    list-style: none;
+    padding-left: 4%;
+}
+
+.data ul li{
+
+    margin-top: 3%;
+}
+
+.ezeiza {
+
+    margin-bottom: 5%;
+}

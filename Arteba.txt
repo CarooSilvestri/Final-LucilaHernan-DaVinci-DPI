@@ -1,0 +1,5 @@
+Desarrollamos una app de Arte BA. En ella, a través de List Menú podés encontrar todas las galerías de la exposición. Haciendo Click en alguna de ella, entrás a la info de cada galería.
+Tambien tenés un Drawer Menú con las opciones “conócenos” y “visitas”, en la primera con info sobre la fundación y en la segunda donde te explican cómo llegar. También tenemos en la parte superior un Action Bar (Popup Info) con nuestros nombres.
+En el footer, mediante un navbar, además del home, tenemos “artistas”, que al ingresar podes ver quien es cada uno. 
+Y por último, “mis Charlas”, donde te podés registrar a las que vas a asistir. En caso de arrepentirte, tenés la opción de borrar y bien volver a anotarte en otra o en ninguna
+
